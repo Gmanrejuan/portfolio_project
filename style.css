@@ -2,6 +2,7 @@
 	padding: 10px 10%;
 }
 
+
 body{
 	background-color: #000000;
 }
@@ -61,12 +62,12 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-	font-size: 60px;
+	font-size: 80px;
 	font-weight: 600;
 	color: #fff;
 }
 .tab-title{
-	display: flex;
+	display: block;
 	margin: 20px 0 40px;
 }
 .tab-link{
@@ -87,18 +88,27 @@ nav ul li a:hover::after{
 	transition: 0.5s;
 }
 
-.tab-link.active-link::after{
-	width: 50%;
+.tab-link{
+	width: 100%;
 }
 .tab-contents ul li span{
 	color: #ff004f;
 	font-size: 14px;
 }
 .tab-contents{
-	display: none;	
+		
 }
 .tab-contents.active-tab{
-	display: block;	
+		
+}
+
+#contact{
+	padding: 80px 0;
+	color: #ababab;
+}
+
+.contact_size{
+	font-size: 14px;
 }
 
 
