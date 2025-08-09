@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilman Rejuan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="gilman.png" class="logo" alt="Gilman Rejuan">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Student</p>
+                <h1>Hi, I'm <span>Gilman Rejuan</span><br>from Bangladesh</h1>
+                <p class="subtitle">Passionate about solving problems through code and building innovative web applications</p>
+                <a href="#about" class="btn">Learn More About Me</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" alt="Gilman Rejuan" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Software Engineering student at Shahjalal University of Science and Technology, Sylhet, Bangladesh. 
+                    I'm passionate about problem-solving and coding, with a growing expertise in web development. When I'm not coding, 
+                    I enjoy playing outdoor sports like football, cricket, and badminton. Currently, I'm expanding my skills in 
+                    JavaScript and modern web technologies to build innovative applications.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills-tab')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience-tab')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education-tab')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills-tab">
+                        <ul>
+                            <li><span>Competitive Programming</span><br>
+                                <a href="https://codeforces.com/profile/G.manrejuan" target="_blank">Codeforces Profile</a><br>
+                                <a href="https://vjudge.net/user/Gilman" target="_blank">VJudge Profile</a>
+                            </li>
+                            <li><span>Programming Languages</span><br>C++, JavaScript, Python, Java</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React (Learning)</li>
+                            <li><span>Sports & Leadership</span><br>University Football & Badminton Champion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience-tab">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education-tab">
+                        <ul>
+                            <li><span>Bachelor's Degree</span><br>Software Engineering<br>Shahjalal University of Science and Technology, Sylhet</li>
+                            <li><span>HSC</span><br>Jalalabad Cantonment Public School and College</li>
+                            <li><span>Focus Areas</span><br>Data Structures, Algorithms, Web Development, Software Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h2>Frontend Development</h2>
+                    <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>C++, Python, Java, Data Structures & Algorithms</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-trophy"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Competitive Programming, Algorithm Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="bookify.png" alt="Portfolio Website">
+                    <div class="layer">
+                        <h3>Android App</h3>
+                        <p>This PDF Reader app is a fast, lightweight, and user-friendly Android application developed with Kotlin, Google’s modern programming language for Android.</p>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="webApp.png" alt="Programming Solutions">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>This web application combines a modern, responsive Next.js frontend with a powerful Python Flask backend to deliver an intelligent, real-time detection platform. The app integrates a custom-built machine learning detection model, enabling users to upload or stream data for instant analysis and accurate results.</p>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="logo.jpeg" alt="Web Application">
+                    <div class="layer">
+                        <h3> Web App</h3>
+                        <p>This e-commerce platform is developed using the MERN stack—MongoDB, Express.js, React, and Node.js—to deliver a fast, secure, and scalable online shopping experience.</p>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More Projects</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> rejuangm@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +880 1873102961</p>
+                    <div class="social-icons">
+                        <a href="https://codeforces.com/profile/G.manrejuan" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://vjudge.net/user/Gilman" target="_blank"><i class="fas fa-trophy"></i></a>
+                        <a href="https://www.linkedin.com/in/gilman-md-rejuan-7a679a238/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Gmanrejuan" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="copyright">
+        <p>Copyright © 2025 </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
